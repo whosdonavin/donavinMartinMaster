@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Reenie+Beanie&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: #0b2545;
+  color: whitesmoke;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.active {
+  color: #bc9359 !important;
+}
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}

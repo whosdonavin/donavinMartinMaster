@@ -59,7 +59,7 @@ const Projects = () => {
         </ProjectImage>
         <ProjectDescription>
           <ProjectText>
-            A fullstack ecommerce application that was previously using wix for
+            A fullstack e-commerce application that was previously using Wix for
             an Oklahoma City caterer. The original website has been redesigned
             and rebuilt with React, Styled Components and Redux. It features its
             own API to facilitate any request outside of payment processing,

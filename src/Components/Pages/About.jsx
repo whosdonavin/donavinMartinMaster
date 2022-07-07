@@ -1,9 +1,20 @@
 import styled from "styled-components";
 import { mobile } from "../../Responsive";
-import { SiExpress, SiMysql, SiJquery, SiJira, SiRedux } from "react-icons/si";
+import {
+  SiExpress,
+  SiMysql,
+  SiJquery,
+  SiJira,
+  SiRedux,
+  SiCypress,
+  SiJest,
+  SiJenkins,
+  SiDocker,
+  SiPhp,
+  SiElectron,
+} from "react-icons/si";
 import {
   FaConfluence,
-  FaBootstrap,
   FaJsSquare,
   FaCss3Alt,
   FaNodeJs,
@@ -12,6 +23,7 @@ import {
   FaHtml5,
   FaSass,
   FaNpm,
+  FaLaravel,
 } from "react-icons/fa";
 
 const AboutPage = styled.section`
@@ -24,7 +36,6 @@ const Top = styled.div`
   margin: 0 auto;
   ${mobile({ width: "100%", margin: 0, "text-align": "center" })}
 `;
-
 const Title = styled.h1`
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -83,14 +94,14 @@ const JQUERY = styled(SiJquery)`
   color: #0868ac;
   ${mobile({ "font-size": "2rem " })}
 `;
+const ELECTRON = styled(SiElectron)`
+  font-size: 2rem;
+  color: #0868ac;
+  ${mobile({ "font-size": "2rem " })}
+`;
 const SASS = styled(FaSass)`
   font-size: 2rem;
   color: #cd6799;
-  ${mobile({ "font-size": "2rem " })}
-`;
-const BOOTSTRAP = styled(FaBootstrap)`
-  font-size: 2rem;
-  color: #6f42c1;
   ${mobile({ "font-size": "2rem " })}
 `;
 const REACT = styled(FaReact)`
@@ -137,19 +148,44 @@ const CONFLUENCE = styled(FaConfluence)`
   color: #0052cc;
   ${mobile({ "font-size": "2rem " })}
 `;
-
+const CYPRESS = styled(SiCypress)`
+  font-size: 2rem;
+  color: grey;
+  ${mobile({ "font-size": "2rem " })}
+`;
+const JENKINS = styled(SiJenkins)`
+  font-size: 2rem;
+  color: white;
+  ${mobile({ "font-size": "2rem " })}
+`;
+const DOCKER = styled(SiDocker)`
+  font-size: 2rem;
+  color: #0db7ed;
+  ${mobile({ "font-size": "2rem " })}
+`;
+const PHP = styled(SiPhp)`
+  font-size: 2rem;
+  color: #8892bf;
+  ${mobile({ "font-size": "2rem " })}
+`;
+const LARAVEL = styled(FaLaravel)`
+  font-size: 2rem;
+  color: #f1502f;
+  ${mobile({ "font-size": "2rem " })}
+`;
+const JEST = styled(SiJest)`
+  font-size: 2rem;
+  color: #c63d14;
+  ${mobile({ "font-size": "2rem " })}
+`;
 const About = () => {
   return (
     <AboutPage>
       <Top>
         <Title>About Me</Title>
         <PageText>
-          A front end developer, who is continuously striving for excellence in
-          all aspects technology. Currently my day to day includes testing
-          backend services and creating application documentation. Additionally
-          other duties include communicating and collaborating with other
-          developers and business analyst in an agile scrum environment to
-          produce sprint based deliverables.
+          An Automation Engineer who is continuously striving to achieve
+          excellence in all aspects technology.
         </PageText>
         <PageSubtitle>Competencies</PageSubtitle>
         <Skills>
@@ -162,20 +198,16 @@ const About = () => {
             <ItemTitle>CSS</ItemTitle>
           </Item>
           <Item>
-            <JS />
-            <ItemTitle>Javascript</ItemTitle>
+            <SASS />
+            <ItemTitle>SASS</ItemTitle>
           </Item>
           <Item>
             <JQUERY />
             <ItemTitle>Jquery</ItemTitle>
           </Item>
           <Item>
-            <SASS />
-            <ItemTitle>SASS</ItemTitle>
-          </Item>
-          <Item>
-            <BOOTSTRAP />
-            <ItemTitle>Bootstrap</ItemTitle>
+            <JS />
+            <ItemTitle>Javascript</ItemTitle>
           </Item>
           <Item>
             <REACT />
@@ -186,6 +218,10 @@ const About = () => {
             <ItemTitle>Redux</ItemTitle>
           </Item>
           <Item>
+            <ELECTRON />
+            <ItemTitle>Electron</ItemTitle>
+          </Item>
+          <Item>
             <NODE />
             <ItemTitle>Node</ItemTitle>
           </Item>
@@ -194,8 +230,32 @@ const About = () => {
             <ItemTitle>Express</ItemTitle>
           </Item>
           <Item>
+            <PHP />
+            <ItemTitle>PHP</ItemTitle>
+          </Item>
+          <Item>
+            <LARAVEL />
+            <ItemTitle>Laravel</ItemTitle>
+          </Item>
+          <Item>
+            <DOCKER />
+            <ItemTitle>Docker</ItemTitle>
+          </Item>
+          <Item>
             <SQL />
             <ItemTitle>MySQL</ItemTitle>
+          </Item>
+          <Item>
+            <JENKINS />
+            <ItemTitle>Jenkins</ItemTitle>
+          </Item>
+          <Item>
+            <JEST />
+            <ItemTitle>Jest</ItemTitle>
+          </Item>
+          <Item>
+            <CYPRESS />
+            <ItemTitle>Cypress</ItemTitle>
           </Item>
           <Item>
             <NPM />

@@ -83,7 +83,7 @@ const Information = () => {
     <InformationSection>
       <Top>
         <Name to="/">Donavin Martin</Name>
-        <Title>Front End Developer</Title>
+        <Title>QA Engineer</Title>
         <MobileNav />
       </Top>
       <Center>
